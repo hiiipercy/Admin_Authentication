@@ -1,13 +1,13 @@
 <script setup lang="ts">
 import { onMounted } from 'vue'
 import { initFlowbite } from 'flowbite'
-import Navbar from './Navbar.vue'
-import Sidebar from './Sidebar.vue'
+// import Navbar from './Navbar.vue'
+// import Sidebar from './Sidebar.vue'
 
 // initialize components based on data attribute selectors
-onMounted(() => {
-    initFlowbite();
-})
+// onMounted(() => {
+//     initFlowbite();
+// })
 
 </script>
 
@@ -22,11 +22,11 @@ onMounted(() => {
     <!-- Sidebar Start  -->
                 <Sidebar/>
     <!-- Sidebar End  -->
-  
+
 <!-- Sidebar Start  -->
                 <slot/>
     <!-- Sidebar End  -->
-    
+
   </div>
 </template>
 
