@@ -3,6 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+         @routes
 
         {{-- Inline script to detect system dark mode preference and apply it immediately --}}
         <script>
@@ -36,8 +37,6 @@
 
         @fonts
 
-        {{-- FIXED: Removed the dynamic .vue page entry point. Only load app.css and app.ts --}}
-        @routes
         @vite(['resources/css/app.css', 'resources/js/app.ts'])
         
         <x-inertia::head>

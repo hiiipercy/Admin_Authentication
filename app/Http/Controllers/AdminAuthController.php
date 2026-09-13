@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Controllers\Admin;
+namespace App\Http\Controllers;
 
 use App\Http\Controllers\Controller; 
 use Illuminate\Http\Request;
@@ -63,13 +63,13 @@ class AdminAuthController extends Controller
     /**
      * Handle admin logout.
      */
-    public function logout(Request $request)
+     public function logout(Request $request)
     {
         Auth::guard('web')->logout();
 
         $request->session()->invalidate();
         $request->session()->regenerateToken();
 
-        return redirect()->route('admin.login');
+        return redirect()->route('login');
     }
 }

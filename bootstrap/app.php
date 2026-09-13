@@ -20,6 +20,7 @@ return Application::configure(basePath: dirname(__DIR__))
         // Register your admin middleware alias here 👇
         $middleware->alias([
             'admin' => \App\Http\Middleware\AdminMiddleware::class,
+            'redirectMiddleware' => \App\Http\Middleware\RedirectMiddleware::class,
         ]);
 
         $middleware->web(append: [
